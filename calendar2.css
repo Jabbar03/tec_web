@@ -1,0 +1,36 @@
+html {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+body {
+  background: url("space.jpg");
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack on mobile */
+  width: 95%;
+  max-width: 900px; /* Adjust based on your preference */
+}
+
+h1 {
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-grid:first-child {
+
+}
+
+
+
+.days {
+}
