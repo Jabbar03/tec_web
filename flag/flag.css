@@ -1,0 +1,74 @@
+div {
+  position: absolute;
+}
+
+.string {
+  width:150vh;
+  background-color: #001489 ;  
+}
+
+#upper {
+  left:0vh;
+  top: 0vh;
+  background-color: #001489 ;
+  height: 50vh;
+  width: 50vh;
+}
+
+#cross1 {
+  left:20vh;
+  width:10vh;
+  top: 0vh;
+  height:50vh;
+  background-color: white;
+  z-index:1;
+}
+
+#cross2 {
+  left:0vh;
+  width:50vh;
+  top: 20vh;
+  height: 10vh;
+  background-color: white;
+  z-index:1;
+}
+
+#flag-container {
+  border-right: 1px #001489 solid;
+  top: 0vh;
+  left: 0vh;
+  height: 90vh;
+  width: 150vh;
+}
+
+#one {
+  top: 0vh;  
+  left:0vh;
+  height:10vh;
+}
+
+#two {
+  top: 20vh; 
+  height:10vh;
+  left:0vh;
+}
+
+#three {
+  top: 40vh;
+  height:10vh;
+  left:0vh;
+}
+
+#four {
+  top: 60vh; 
+  height:10vh;
+  left:0vh;
+}
+
+#five {
+  top: 80vh;
+  height:10vh;
+  left:0vh;
+}
+
+ 

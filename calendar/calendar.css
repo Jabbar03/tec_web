@@ -1,131 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  line-height: 1.8;
-  font-weight: 400;
-  min-width: 600px;
+  font-family: "Roboto", "Helvetica", "Arial";
+  font-weight: 600;
   color: white;
+  min-width: 900px;
 }
 
 body {
   background: url("space.jpg");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column; /* Stack on mobile */
-  width: 95%;
-  max-width: 900px; /* Adjust based on your preference */
-}
-
-header {
-  width: 100vh; /* Adjusting the width to account for margin */
-  flex-direction: row;
   text-align: center;
 }
 
-main h2 {
-  margin-top: 0px; 
-  font-size: 150%;
-  text-align: "center";
+#title {
+  margin-top: 1.3em;
+  padding-top: 0.5%;
+  background: linear-gradient(90deg, rgba(226,93,58,1) 17%, rgba(143,0,248,1) 85%);
 }
 
-main {
-  flex: 1;
-  margin: 1em;
-  padding: 1.5em;
-  background-color: #3a3153;
-  border: 2px solid #b1aebb;
-  border-radius: 8px;
-}
-
-#first {
-  padding-bottom:0em;
-}
-
-#second {
-  align-item: center;
-}
-
-main p {
-  font-size: 125%;
-}
-
-main div {
-  font-size: 125%;
-}
-
-@media {
-  .content-wrapper {
-    display: flex;
-    flex-direction: column; /* Side by side on desktop */
-    align-items: center;
-  }
-  
-  #second{
-    width: calc(65%); /* Adjust width to account for margins */
-  }
-}
-
-.month-indicator {
-  color: white; /* Keeping the theme consistent */
-  text-align: center;
-  font-weight: 500;
-}
-
-.day-of-week,
-.date-grid {
+.day-of-week {
   display: grid;
+  padding-top: 0.5%;
+  font-size: 200%;
   grid-template-columns: repeat(7, 1fr);
   justify-content: center;
   text-align: center;
 }
 
 .day-of-week {
-  margin-top: 0.50em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: linear-gradient(90deg, rgba(226,93,58,1) 17%, rgba(143,0,248,1) 85%);
 }
 
 .day-of-week > * {
-  font-size: 1em; /* Slightly larger for readability */
-  color: white; /* Contrast color for headers */
-  letter-spacing: 0.15em;
-  font-variant: small-caps;
-}
-
-.date-grid {
-  margin-top: 10px;
-}
-
-.date-grid button:first-child {
-  grid-column: 1;
-}
-
-.date-grid button {
-  position: auto;
-  border: 0;
-  width: auto;
-  height: 5ch;
-  border-radius: 90%;
-  background: radial-gradient(circle, rgba(149,101,203,1) 0%, rgba(126,37,122,1) 0%, rgba(58,49,83,1) 57%); 
+  font-size: 1em; 
   color: white; 
+  letter-spacing: 0.15em;
+  font-variant: big-caps;
 }
-.date-grid button:hover,
-.date-grid button:focus {
-  outline: none;
-  background-color: yellow; 
-  color: yellow; 
-  font-weight: bold;
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); 
+  background-image: url('saturn2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.days {
+  margin: 0.5vw;
+  height: 11vw;
+  min-height: 100px;
+  min-width: 100px;
+	display: grid;
+	align-items: center;
+  border: 0.5em;
+  border-width: 0.5em;
+  border-style: solid;
+  border-color: rgba(149,101,203,1); 
+}
+
+.days h1:hover {
   cursor: pointer;
+  font-size: 300%;
+  padding-top:0.2em;
+  background-color: rgb(255,255,255,0.5);
+  color: rgba(230,17,185,1); 
 }
 
-button.notmarch {
-  color: grey;
+#notapril {
+  border-color: rgba(149,101,203,0.3); 
 }
-
-button:hover.notmarch , 
-button:focus.notmarch{
-  background-color: transparent;
-}
-
